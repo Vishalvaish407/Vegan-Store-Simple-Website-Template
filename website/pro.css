@@ -1,0 +1,603 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    nav {
+    background-color: white;
+    width: 100%;
+    height: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+    box-sizing: border-box;
+    position: fixed;
+    }
+    #logo {
+    width: 40px;
+    }
+    .dropdown-content {
+    display: inline-block;
+    position: relative;
+    }
+    .dropdown-item {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 24px;
+    cursor: pointer;
+    }
+    .dropdown-item i {
+        padding-left: 4px;
+    }
+    .dropdown {
+    width: 150px;
+    border-top: 2px solid rgb(170, 210, 54);
+    position: absolute;
+    right: 24px;
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 20px;
+    display: none;
+    }
+    
+    .dropdown a {
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+    cursor: pointer;
+    }
+    .dropdown-content:hover .dropdown{
+        display: block;
+    }
+    
+    .buy_button {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 16px;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    
+    cursor: pointer;
+    }
+    /*------------------section 1-----------------*/
+    
+    #landing_page{
+    width:100%;
+    height:100vh;
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
+    background-size: cover;
+    
+    }
+    #section1{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    #section1 h1{
+    width: 100%;
+    max-width: 1100px;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0px;
+    
+    }
+    #section1 p{
+    width: 100%;
+    max-width: 1100px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #8b8b99;
+    text-align: center;
+    padding-top: 18px;
+    }
+    
+    /*---------section 2 wrapper-----*/
+    #step_wrapper{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    }
+    #step_1{
+    background-color: #5acda6;
+    }
+    #step_2{
+    background-color: #91ac41;
+    }
+    #step_3{
+    background-color: #e4b476;
+    }
+    #step_4{
+    background-color: #f69dad;
+    }
+    .step_content{
+    width: 26%;
+    text-align: center;
+    color: white;
+    padding: 112px 48px;
+    box-sizing: border-box;
+    }
+    .step_content i{
+    font-size: 96px;
+    transition:all 0.3s ease 0s;
+    }
+    .step_content:hover i{
+    transform: scale(1.1, 1.1);
+    }
+    .step_content p{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    }
+    
+    /*-------------section 3 store wrapper------------*/
+    
+    #vegan_store{
+    width: 100%;
+    padding: 75px 0px;
+    background-color: #f7eee2;
+    text-align: center;
+    }
+    
+    #vegan_store .heading1{ 
+    font-size: 24px;
+    font-family:  'Caveat', cursive;
+    color: #91ac41;
+    margin-top:30px;
+    margin-bottom: 0px;
+    }
+    #vegan_store h3{
+    font-size: 44px;
+    font-weight: 610px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    }
+    
+    #vegan_store .heading2{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin-bottom: 55px;
+    }
+    
+    #vegan_store_wrapper{
+    width:100%;
+    max-width:1100;
+    display:flex;
+    justify-content: stretch;
+    
+    }
+    #vegan_store_wrapper .items{
+    width:25%;
+    text-align: center;
+    padding:24px;
+    margin-left: auto;
+    margin-right:auto;
+    }
+    .icon_wrapper{
+    display: inline-block;
+    background-color: #e3b375;
+    padding:40px;
+    border-radius: 50%;
+    color:white;
+    transition:all 0.3s ease 0s;
+    
+    }
+    .icon_wrapper i{
+    font-size: 60px;
+    }
+    
+    #vegan_store_wrapper .items h3{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight:600px;
+    }
+    #vegan_store_wrapper .items p{
+    font-size: 16px;
+    font-weight:450x;
+    letter-spacing: 0.5;
+    color:#8b8b99;
+    }
+    
+    .items:hover .icon_wrapper{
+    transform: scale(1.1, 1.1);
+    }
+    
+    /*-----------section 4-------*/
+    #vegan_shop{
+    width: 100%;
+    padding:80px 0px;
+    text-align: center;
+    }
+    
+    #vegan_shop .heading1{ 
+    font-size: 24px;
+    font-family:  'Caveat', cursive;
+    color: #91ac41;
+    margin-top:30px;
+    margin-bottom: 0px;
+    }
+    #vegan_shop h3{
+    font-size: 44px;
+    font-weight: 610px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    }
+    
+    #vegan_shop .heading2{
+    max-width: 700px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    margin-left:auto;
+    margin-right: auto;
+    letter-spacing: 0.5px;
+    margin-bottom: 55px;
+    }
+    
+    #vegan_shop .testimonial_section{
+    width:100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1100px;
+    display: flex;
+    align-content: center;
+    }
+    
+    #vegan_shop > .testimonial_section > .testimonial{
+    width:25%;
+    padding: 40px 30px;
+    text-align:center;
+    background-color: #f5f6fb;
+    margin: 16px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: boxshadow 0.3s;
+    }
+    
+    .testimonial:hover{
+    box-shadow: 0 12px 16px 0 rgba(39,39,47,0.06);
+    }
+    #vegan_shop > .testimonial_section >.testimonial> img{
+    width:80px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+    
+    }
+    
+    #vegan_shop > .testimonial_section >.testimonial>.info{
+    font-size: 14px;
+    color:#8b8b99;
+    letter-spacing: 0.5px;
+    margin: 0px;
+    font-style: italic;
+    
+    }
+    #vegan_shop > .testimonial_section >.testimonial>.info_name{
+    
+    font-size: 16px;
+    font-weight: 600px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    }
+    #vegan_shop > .testimonial_section >.testimonial>.info_role{
+    color:#8b8b99;
+    font-style: italic;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    margin:0px;
+    }
+    
+    /*---section 5-----------*/
+    #follow_us_wrapper{
+    display: flex;
+    justify-content: stretch;
+    }
+    #follow_us_wrapper > .left_wrapper{
+    width: 66%;
+    display: inline-block;
+    margin: 0px;
+    }
+    #follow_us_wrapper > .left_wrapper img{
+    width:100%;
+    height: 100%;
+    }
+    
+    #follow_us_wrapper > .right_wrapper{
+    width:34%;
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+    }
+    #follow_us_wrapper > .right_wrapper>.form_content{
+    margin:120px;
+    }
+    #follow_us_wrapper > .right_wrapper>.form_content h3{
+    font-size: 44px;
+    font-weight: 600px;
+    margin-left: 16px;
+    }
+    #follow_us_wrapper > .right_wrapper>.form_content p{
+    font-size: 16px;
+    line-height: 1.6;    
+    margin: 0;
+    color:  #8b8b99;
+    }
+    #follow_us_wrapper > .right_wrapper>.form_content >form>#txt_field{
+    width:100%;
+    font-size:16px;
+    display: block;
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 5%;
+    font-weight: 500px;
+    background-color: white;
+    color:#8b8b99;
+    border:0px;
+    margin-top: 50px;
+    cursor: pointer;
+    outline: none;
+    
+    }
+    #follow_us_wrapper > .right_wrapper>.form_content >form>#btn{
+    background-color: rgb(246, 157, 173);
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 16px;
+    padding: 16px 42px;
+    border-radius: 4px;
+    border:0px;
+    }
+    /*------------section 6--------*/
+    #stats{
+    width:100%;
+    background-color: rgb(246, 252, 250);
+    
+    }
+    #stats .stats_container{
+    width:100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: stretch;
+    text-align: center;
+    padding: 100px 0px;
+    margin:0px auto; 
+    }
+    #stats .stats_container .stats_item{
+    width:25%;
+    padding: 0px 50px;
+    
+    }
+    #stats .stats_container .stats_item h3{
+    font-size: 44px;
+    font-weight: 600px;
+    margin: 0px;
+    
+    }
+    #stats .stats_container .stats_item p{
+    color: rgb(87, 227, 181);
+    font-size: 14px;
+    margin: 0px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    }
+    /*----------------section  7------------------*/
+    #video_wrapper{
+    text-align: center;
+    width: 100%;
+    margin:0px;
+    margin-bottom: 10px;
+    }
+    #video_wrapper h3{
+    
+    color:#8b8b99;
+    font-size:44px;
+    font-weight: 200px;
+    }
+    
+    #video_wrapper .horizontal{
+    width:100px;
+    height:1px;
+    background-color: #e4b476;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    #video_wrapper iframe{
+    width:100%;
+    height:400px;
+    border:none;
+    }
+    /*----------------section 8------------*/
+    .details_section{
+    width:100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: stretch;
+    padding:120px 0px;
+    }
+    
+    .details_section div{
+    width: 50%;
+    /*Margin-left:120px;*/
+    }
+    
+    .details_section div .contact_heading{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin-top: 40px;
+    }
+    .details_section div .address_info{
+    font-size: 44px;
+    font-weight: 600px;
+    }
+    .details_section div .contact_descrip{
+    font-size: 16px;
+    font-weight: 400px;
+    letter-spacing: 0.5px;
+    color:#8b8b99;
+    line-height: 25px;
+    }
+    .details_section div .store_name{
+    margin-top:0px;
+    font-size: 34px;
+    font-weight: 400px;
+    
+    }
+    .details_section> div >form >.text-box{
+    outline: none;
+    width:100%;
+    padding:17px;
+    font-size: 16px;
+    color: #8b8b99;
+    border-radius:5px;
+    margin-bottom: 14px;
+    border:1px solid #e5e6ec;
+    }
+    .details_section> div >form >.text-box::placeholder{
+    color: #8b8b99;
+    } 
+    
+    #btn-submit{
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    }
+    
+    /*--------------footer----------*/
+    footer{
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    letter-spacing: 0.6px;
+    padding: 35px 0px;
+    }
+    /*-------------------------------media queries-----------------------------*/
+    /*-------------------------------media queries-----------------------------*/
+    @media screen and (max-width:900px){
+       
+    .dropdown-item {
+        display: none;
+    }
+    
+    /*-----------section 1--------------*/
+    #section1 h1{
+    font-size: 28px;
+    }
+    #section1 p{
+    font-size: 16px;
+    box-sizing: border-box;
+    }    
+    /*---------section 2 wrapper-----*/
+    #step_wrapper{
+    width:100%;
+    flex-direction: column;
+    }
+    .step_content{
+    width: 100%;
+    
+    }
+    /*----------section 3------*/
+    #vegan_store{
+    Width:100%;
+    box-sizing: border-box;
+    }
+    #vegan_store_wrapper{
+    width:100%;
+    flex-direction: column;
+    }
+    #vegan_store_wrapper .items{
+    width:100%;
+        Box-sizing:border-box;
+    }
+    /*---------section 4-------*/
+    #vegan_shop{
+    padding:16px;
+    box-sizing: border-box;
+    
+    }
+    #vegan_shop .testimonial_section{
+    width:100%;
+    flex-direction: column;
+    
+    }
+    #vegan_shop > .testimonial_section > .testimonial{
+    width:90%;
+    box-sizing: border-box;
+    }
+    /*---------section 5---------*/
+    #follow_us_wrapper{
+    flex-direction: column;
+    }
+    #follow_us_wrapper > .left_wrapper{
+    width: 100%;
+    
+    }
+    #follow_us_wrapper > .right_wrapper{
+    width:100%;
+    
+    }
+    #follow_us_wrapper > .right_wrapper>.form_content{
+    margin:16px;
+    }
+    #follow_us_wrapper > .right_wrapper>.form_content h3{
+    font-size: 27px;
+    
+    }
+    /*-------------section 6-----------*/
+    #stats .stats_container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    /*-------------section 8------------*/
+    .details_section{
+    flex-direction: column;
+    justify-content: stretch;
+    padding: 16px;
+    box-sizing: border-box;
+    align-items: center;
+    }
+    .details_section>div{
+    width: 100%;
+        Margin-left :0px;
+        Margin-right:0px;
+    }
+    .details_section div:last-of-type{
+    width:100%;
+    margin-left: 0px;
+    
+    }
+    .details_section> div >form >.text-box{
+    width:90%;
+    padding:17px;
+    
+    }
+    }
